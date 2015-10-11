@@ -59,21 +59,22 @@ gulp.task('serve:dev', [
   'build:make-settings', 'compile:styles', 'js:lint'
 ], (done) => {
   const opts = Object.assign({}, BS_OPTIONS, {server: BS_SERVER_OPTIONS});
+
   browserSync(opts, done);
 
+  gulp.watch(paths.SRC_HTML, ['reload']).on('change', reportChange);
   gulp.watch(paths.SRC_SCRIPT, ['js:lint', 'reload'])
   .on('change', reportChange);
-  gulp.watch(paths.SRC_INDEX, ['reload']).on('change', reportChange);
   gulp.watch(paths.SRC_STYLE, ['compile:styles', 'reload'])
   .on('change', reportChange);
 });
 
 
 gulp.task('serve:build', ['build'], (done) => {
-  return _serve([paths.BUILD_DIR], ['reload:build'], done);
+  _serve([paths.BUILD_DIR], ['reload:build'], done);
 });
 
 
 gulp.task('serve:dist', ['dist'], (done) => {
-  return _serve([paths.DIST_DIR], ['reload:dist'], done);
+  _serve([paths.DIST_DIR], ['reload:dist'], done);
 });

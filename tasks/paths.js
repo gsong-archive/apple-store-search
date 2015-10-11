@@ -10,6 +10,7 @@ export const BUILD_ALL = path.join(BUILD_DIR, '**/*');
 export const BUILD_SCRIPTS_DIR = path.join(BUILD_DIR, 'scripts/');
 
 export const SRC_ALL = path.join(SRC_DIR, '**/*');
+export const SRC_HTML = path.join(SRC_DIR, '**/*.html');
 export const SRC_INDEX = path.join(SRC_DIR, 'index.html');
 export const SRC_SCRIPT = path.join(SRC_DIR, '**/*.js');
 export const SRC_STYLE = path.join(SRC_DIR, '**/*.scss');
