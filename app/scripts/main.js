@@ -1,12 +1,8 @@
-import Foo from '../components/foo/foo';
+import angular from 'angular';
 
-import 'font-awesome/css/font-awesome.css!';
-import '../styles/styles.css!';
+import app from './app.js';
 
 
-let foo = new Foo();
-
-let textNode = document.createTextNode(foo.speak());
-document.body.appendChild(textNode);
-
-foo.addElement("I'm foo!");
+angular.element(document).ready(function() {
+  angular.bootstrap(document, [app.name], {strictDi: false});
+});

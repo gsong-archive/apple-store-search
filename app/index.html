@@ -2,10 +2,15 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title ng-bind="$title + 'Apple Store Search'">
+      Apple Store Search
+    </title>
+
+    <link rel='stylesheet'
+    href='https://fonts.googleapis.com/css?family=Roboto:400,700|Material+Icons'>
   </head>
-  <body>
-    <img src="images/waterfall.jpg" alt="waterfall image" width="50%">
-    <p>Text in template. <i class="fa fa-camera-retro"></i></p>
+  <body ng-cloak>
+    <ui-view/>
 
     <!-- build:js -->
     <script src="jspm_packages/system.js"></script>
