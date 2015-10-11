@@ -21,6 +21,7 @@
     "dependencies": {
       "angular": "github:angular/bower-angular@^1.4.7",
       "angular-material": "github:angular/bower-material@^0.11.2",
+      "angular-messages": "github:angular/bower-angular-messages@^1.4.7",
       "angular-ui-router": "github:angular-ui/ui-router@^0.2.15",
       "angular-ui-router-title": "npm:angular-ui-router-title@^0.0.4",
       "clean-css": "npm:clean-css@^3.3.9",
