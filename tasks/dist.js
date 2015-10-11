@@ -3,23 +3,22 @@ import runSequence from 'run-sequence';
 
 import * as paths from './paths';
 import gulp from './_gulp';
-import jspmBuild from './utils';
 
 
 const $ = gulpLoadPlugins();
 
 
-gulp.task('dist:jspm', ['compile:styles'], () =>
-  jspmBuild({
-    minify: true,
-    mangle: true,
-    sourceMaps: false
-  })
+gulp.task('dist:post-jspm', () =>
+  gulp.src(paths.MAIN_DEST)
+  .pipe($.replace(/(angular.bootstrap.*strictDi:\s*)(false)/g, '$1true'))
+  .pipe($.ngAnnotate())
+  .pipe($.uglify())
+  .pipe(gulp.dest(paths.BUILD_SCRIPTS_DIR))
 );
 
 
 gulp.task('dist:js', (callback) =>
-  runSequence('dist:jspm', 'js:replace_paths', callback)
+  runSequence('build:jspm', 'dist:post-jspm', 'js:replace_paths', callback)
 );
 
 

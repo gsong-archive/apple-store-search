@@ -2,12 +2,12 @@ import fs from 'fs';
 import path from 'path';
 
 import gulpLoadPlugins from 'gulp-load-plugins';
+import jspm from 'jspm';
 import runSequence from 'run-sequence';
 
 import * as paths from './paths';
 import environments from '../app/scripts/environments';
 import gulp from './_gulp';
-import jspmBuild from './utils';
 
 
 const $ = gulpLoadPlugins();
@@ -28,13 +28,13 @@ export default ${settings}`);
 });
 
 
-gulp.task('build:jspm', ['compile:styles'], () =>
-  jspmBuild({
+gulp.task('build:jspm', ['compile:styles'], () => jspm.bundleSFX(
+  paths.MAIN_SRC, paths.MAIN_DEST, {
     minify: false,
     mangle: false,
     sourceMaps: true
-  })
-);
+  }
+));
 
 
 gulp.task('build:js', (callback) =>
