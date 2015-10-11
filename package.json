@@ -1,7 +1,7 @@
 {
-  "name": "es6-jspm-gulp-starter",
-  "version": "0.2.0",
-  "description": "ES6 starter template, using babel, jspm, and gulp",
+  "name": "apple-store-search",
+  "version": "0.1.0",
+  "description": "Demonstrate latest Angular best practices, using ES6 and jspm.",
   "main": "app/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,9 +14,9 @@
   "license": "Unlicense",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gsong/es6-jspm-gulp-starter.git"
+    "url": "https://github.com/gsong/apple-store-search.git"
   },
-  "bugs": "https://github.com/gsong/es6-jspm-gulp-starter/issues/new",
+  "bugs": "https://github.com/gsong/apple-store-search/issues/new",
   "jspm": {
     "dependencies": {
       "clean-css": "npm:clean-css@^3.3.9",
