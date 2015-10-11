@@ -13,12 +13,31 @@ System.config({
   },
 
   map: {
+    "angular": "github:angular/bower-angular@1.4.7",
+    "angular-material": "github:angular/bower-material@0.11.2",
+    "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
+    "angular-ui-router-title": "npm:angular-ui-router-title@0.0.4",
     "babel": "npm:babel-core@5.8.25",
     "babel-runtime": "npm:babel-runtime@5.8.25",
     "clean-css": "npm:clean-css@3.4.5",
     "core-js": "npm:core-js@1.2.1",
     "css": "github:systemjs/plugin-css@0.1.18",
-    "font-awesome": "npm:font-awesome@4.4.0",
+    "text": "github:systemjs/plugin-text@0.0.2",
+    "github:angular-ui/ui-router@0.2.15": {
+      "angular": "github:angular/bower-angular@1.4.7"
+    },
+    "github:angular/bower-angular-animate@1.4.7": {
+      "angular": "github:angular/bower-angular@1.4.7"
+    },
+    "github:angular/bower-angular-aria@1.4.7": {
+      "angular": "github:angular/bower-angular@1.4.7"
+    },
+    "github:angular/bower-material@0.11.2": {
+      "angular": "github:angular/bower-angular@1.4.7",
+      "angular-animate": "github:angular/bower-angular-animate@1.4.7",
+      "angular-aria": "github:angular/bower-angular-aria@1.4.7",
+      "css": "github:systemjs/plugin-css@0.1.18"
+    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -63,6 +82,9 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:angular-ui-router-title@0.0.4": {
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
@@ -102,9 +124,6 @@ System.config({
     },
     "npm:core-util-is@1.0.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
-    },
-    "npm:font-awesome@4.4.0": {
-      "css": "github:systemjs/plugin-css@0.1.18"
     },
     "npm:graceful-readlink@1.0.1": {
       "fs": "github:jspm/nodelibs-fs@0.1.2"
