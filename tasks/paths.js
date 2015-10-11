@@ -17,9 +17,6 @@ export const SRC_STYLE = path.join(SRC_DIR, '**/*.scss');
 export const TMP_IMAGE = path.join(TMP_DIR, '**/*.+(png|jpg|svg)');
 export const TMP_SCRIPTS_DIR = path.join(TMP_DIR, 'scripts/');
 
-export const FONT_AWESOME_PATH = 'jspm_packages/npm/font-awesome@4.4.0/';
-export const FONT_SRC = path.join(FONT_AWESOME_PATH, 'fonts/*');
-
 const SCRIPT = 'main';
 export const MAIN_SRC = path.join(TMP_SCRIPTS_DIR, SCRIPT);
 export const MAIN_DEST = path.join(BUILD_SCRIPTS_DIR, SCRIPT + '.js');
