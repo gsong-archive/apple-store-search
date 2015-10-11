@@ -9,10 +9,11 @@ using ES6 and jspm.
 * Package management using [jspm][]
 * Develop and build using [Gulp][] and friends
 
-## Features
 
-* Uses jspm instead of Bower or npm to manage packages for the browser
-* Uses [SystemJS][] to load modules via jspm
+## Major Concepts Demonstrated
+
+* Uses jpsm instead of Bower or npm to manage packages for the browser
+* Uses [SystemJS][] to load modules
 * Sass compilation using [LibSass][] and [Autoprefixer][]
 * Local dev server with [LiveReload](http://livereload.com/) using
     [Browsersync][]
@@ -20,15 +21,14 @@ using ES6 and jspm.
     [EditorConfig][]
 * Linting with [ESLint][]
 * Gulp tasks are written using ES6, of course.
-* Build task deals with simple case of fonts, images, and CSS url references
-    properly.
 * Multiple `serve` modes to facilitate development speed or simulate production
     environment.
-* [Unlicensed][]
+* Per environment setting determined at build time.
 
 ## Usage
 
-1. Clone this repo from `https://github.com/gsong/es6-jspm-gulp-starter.git`.
+1. Fork and clone this repo from
+    `https://github.com/gsong/apple-store-search.git`.
 2. Make sure you have `node` installed on your machine. [nvm][] is highly
    recommended.
 3. Install Gulp and jspm globally: `npm install -g gulp jspm`.
@@ -36,9 +36,10 @@ using ES6 and jspm.
 5. Run `gulp` to start the local dev server.
 6. Write an awesome app! 😀
 
-## Building
+## Building and Publishing
 
-Run `gulp dist` to build the app for distribution in the `/dist` folder.
+1. Run `gulp dist` to build the app for distribution in the `/dist` folder.
+2. Run `gulp publish` to publish the app on `gh-pages` branch.
 
 ## Hint
 
