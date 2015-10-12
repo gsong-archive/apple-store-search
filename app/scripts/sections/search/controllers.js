@@ -2,10 +2,10 @@ import settings from '../../settings';
 
 
 export class SearchController {
-  constructor($log, $state, SessionService) {
+  constructor($log, $state, session) {
     'ngInject';
 
-    this.queryParams = SessionService.queryParams;
+    this.queryParams = session.queryParams;
     this.searchTypes = settings.MEDIA_TYPES;
     Object.assign(this, {$log, $state});
   }

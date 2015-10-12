@@ -2,7 +2,7 @@ import angular from 'angular';
 
 import 'angular-ui-router';
 
-import * as config from './_config';
+import * as config from './config';
 import {search} from './sections/__init__';
 
 

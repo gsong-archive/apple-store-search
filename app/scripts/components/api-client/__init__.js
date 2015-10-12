@@ -1,7 +1,7 @@
 import angular from 'angular';
 
-import factory from './factory';
+import factory from './service';
 
 
-export default angular.module('api-client', [])
-.factory('APIClientFactory', factory);
+export default angular.module('component.apiClient', [])
+.factory('apiClient', factory);

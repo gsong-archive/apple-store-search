@@ -1,9 +1,9 @@
 export function search(
-  $log, $state, $stateParams, APIClientFactory, SessionService
+  $log, $state, $stateParams, apiClient, session
 ) {
   'ngInject';
 
-  Object.assign(SessionService.queryParams, $stateParams);
+  Object.assign(session.queryParams, $stateParams);
 
   $log.debug('route resolve', $stateParams);
 
@@ -11,7 +11,7 @@ export function search(
     return;
   }
 
-  return APIClientFactory.search($stateParams)
+  return apiClient.search($stateParams)
   .then((response) => {
     return response.data;
   });

@@ -20,6 +20,6 @@ function route($stateProvider) {
 }
 
 
-export default angular.module('_base', [ngMaterial, 'ui.router'])
+export default angular.module('app._base', [ngMaterial, 'ui.router'])
 .config(route)
 ;
