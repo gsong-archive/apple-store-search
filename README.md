@@ -14,6 +14,7 @@ using ES6 and jspm.
 
 ## Major Concepts Demonstrated
 
+* Uses [UI Router][] for state based and nested routing
 * Uses jpsm instead of Bower or npm to manage packages for the browser
 * Uses [SystemJS][] to load modules
 * Sass compilation using [LibSass][] and [Autoprefixer][]
@@ -80,4 +81,5 @@ gulp.
 [pull request]: https://github.com/gsong/apple-store-search/compare/
 [systemjs]: https://github.com/systemjs/systemjs
 [todo]: https://github.com/gsong/apple-store-search/blob/development/TODO.md
+[ui router]: http://angular-ui.github.io/ui-router/site/#/api/ui.router
 [unlicensed]: http://unlicense.org/
