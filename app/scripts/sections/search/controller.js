@@ -11,9 +11,7 @@ export class SearchController {
   }
 
   search(queryParams) {
-    const params = queryParams || {
-      term: undefined, media: settings.DEFAULT_MEDIA_TYPE
-    };
+    const params = queryParams || settings.DEFAULT_QUERY_PARAMS;
     this.$state.go('search', params);
   }
 }

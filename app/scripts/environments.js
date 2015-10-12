@@ -13,9 +13,12 @@ const MEDIA_TYPES = [
 
 
 const shared = {
+  API_URL: 'https://itunes.apple.com',
   MEDIA_TYPES: MEDIA_TYPES.map(([k, v]) => ({key: k, label: v})),
-  DEFAULT_MEDIA_TYPE: 'all',
-  API_URL: 'https://itunes.apple.com'
+  DEFAULT_QUERY_PARAMS: {
+    media: 'all',
+    term: ''
+  }
 };
 
 
