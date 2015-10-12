@@ -13,6 +13,7 @@ export default ($cacheFactory, $http) => {
 
   factory.search = (params) => {
     params.callback = 'JSON_CALLBACK';
+    params.limit = 200;
     return $http.jsonp(urls.SEARCH, {params, cache});
   };
 

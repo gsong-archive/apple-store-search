@@ -3,8 +3,6 @@ export function search(
 ) {
   'ngInject';
 
-  $log.debug('****************resolve searching');
-
   Object.assign(SessionService.queryParams, $stateParams);
 
   $log.debug('route resolve', $stateParams);
