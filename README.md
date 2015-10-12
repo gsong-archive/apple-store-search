@@ -1,7 +1,7 @@
 # Universal Apple Store Search
 
 This is a fully functional app demonstrating latest best practices in Angular,
-using ES6 and jspm. The backend is Apple's [Search API][apple api].
+using ES6 and jspm. The backend is [Apple's Search API][apple api].
 
 You can [see the app in action][app].
 
