@@ -4,7 +4,7 @@ import 'angular-ui-router';
 
 import * as config from './app.config';
 import * as run from './app.run';
-import {search} from './sections/index';
+import search from './sections/search/index';
 
 
 export default angular.module('app', ['ui.router', search])

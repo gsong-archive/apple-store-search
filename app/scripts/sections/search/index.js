@@ -7,7 +7,8 @@ import 'angular-ui-router-title';
 
 import _base from '../_base/index';
 import routes from './route';
-import {apiClient, session} from '../../components/index';
+import apiClient from '../../components/api-client/index';
+import session from '../../components/session/index';
 
 
 export default angular.module('app.search', [
