@@ -1,6 +1,6 @@
 {
   "name": "apple-store-search",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Demonstrate latest Angular best practices, using ES6 and jspm.",
   "main": "app/index.html",
   "scripts": {
