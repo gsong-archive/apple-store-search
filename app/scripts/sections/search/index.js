@@ -12,7 +12,7 @@ import {apiClient, session} from '../../components/index';
 
 export default angular.module('app.search', [
   ngMessages, ngMaterial, 'ui.router', 'ui.router.title',
-  _base.name, apiClient.name, session.name
+  _base, apiClient, session
 ])
 .config(routes)
-;
+.name;

@@ -22,4 +22,4 @@ function route($stateProvider) {
 
 export default angular.module('app._base', [ngMaterial, 'ui.router'])
 .config(route)
-;
+.name;
