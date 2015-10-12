@@ -1,4 +1,20 @@
+const MEDIA_TYPES = [
+  ['all', 'All'],
+  ['movie', 'Movie'],
+  ['podcast', 'Podcast'],
+  ['music', 'Music'],
+  ['musicVideo', 'Music Video'],
+  ['audiobook', 'Audiobook'],
+  ['shortFilm', 'Short Film'],
+  ['tvShow', 'TV Show'],
+  ['software', 'Software'],
+  ['ebook', 'eBook']
+];
+
+
 const shared = {
+  MEDIA_TYPES: MEDIA_TYPES.map(([k, v]) => ({key: k, label: v})),
+  DEFAULT_MEDIA_TYPE: 'all',
   API_URL: 'https://itunes.apple.com'
 };
 

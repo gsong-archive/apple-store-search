@@ -3,9 +3,10 @@ import angular from 'angular';
 import 'angular-ui-router';
 
 import * as config from './_config';
+import {search} from './sections/__init__';
 
 
-export default angular.module('app', ['ui.router'])
+export default angular.module('app', ['ui.router', search.name])
 .config(config.controlDebugLogging)
 .config(config.configUIRouter)
 .run(config.setStateIsLoading)

@@ -1,0 +1,43 @@
+<div layout="column">
+  <form name="searchForm" ng-submit="vm.search(vm.queryParams)"
+    style="padding:15px;">
+
+    <div layout="column" layout-gt-md="row" layout-fill>
+      <md-input-container flex-gt-md="15">
+        <label>Search type</label>
+        <md-select ng-model="vm.queryParams.media">
+          <md-option ng-value="searchType.key"
+            ng-repeat="searchType in vm.searchTypes">
+            {{ searchType.label }}
+          </md-option>
+        </md-select>
+      </md-input-container>
+
+      <md-input-container flex>
+        <label>Search term</label>
+        <input name="term" ng-model="vm.queryParams.term" required>
+        <div ng-messages="searchForm.term.$error"
+          ng-if="searchForm.term.$dirty">
+          <div ng-message="required">You must eneter a search term!</div>
+        </div>
+      </md-input-container>
+    </div>
+
+    <div layout="row">
+      <md-button type="submit" class="md-raised md-primary">Search</md-button>
+      <md-button type="button" ng-click="vm.search()">
+        Clear search term
+      </md-button>
+    </div>
+
+  </form>
+
+  <div ng-if="stateIsLoading" layout="column" layout-align="center center">
+    <p>We’re working hard to find your results…</p>
+    <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+  </div>
+
+  <md-divider/>
+
+  <ui-view/>
+</div>
