@@ -3,6 +3,8 @@
 This is a fully functional app demonstrating latest best practices in Angular,
 using ES6 and jspm.
 
+[Check out the app](http://gsong.github.io/apple-store-search).
+
 ## Primary Technologies
 
 * Transpiles ES6+ automagically using [Babel][]
@@ -25,6 +27,7 @@ using ES6 and jspm.
     environment.
 * Per environment setting determined at build time.
 
+
 ## Usage
 
 1. Fork and clone this repo from
@@ -36,10 +39,12 @@ using ES6 and jspm.
 5. Run `gulp` to start the local dev server.
 6. Write an awesome app! 😀
 
+
 ## Building and Publishing
 
 1. Run `gulp dist` to build the app for distribution in the `/dist` folder.
 2. Run `gulp publish` to publish the app on `gh-pages` branch.
+
 
 ## Hint
 
@@ -47,6 +52,7 @@ Use [gulper][] if you want to automatically reload the Gulp runtime whenever you
 change Gulp task files. This is especially nice if you're customizing the task
 files to fit your own workflow. Otherwise you would have to constantly restart
 gulp.
+
 
 ## Contributing
 
