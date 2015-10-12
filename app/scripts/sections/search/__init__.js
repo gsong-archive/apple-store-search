@@ -7,7 +7,7 @@ import 'angular-ui-router-title';
 
 import _base from '../_base/__init__';
 import {ResultsController, SearchController} from './controllers';
-import {apiClient, filters, session} from '../../components/__init__';
+import {apiClient, session} from '../../components/__init__';
 import {makeTitle} from '../utils';
 import {search as response} from './_helpers';
 
@@ -49,7 +49,7 @@ function route($stateProvider) {
 export default angular.module('search', [
   ngMessages,
   ngMaterial, 'ui.router', 'ui.router.title',
-  _base.name, apiClient.name, filters.name, session.name
+  _base.name, apiClient.name, session.name
 ])
 .config(route)
 ;
