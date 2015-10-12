@@ -37,7 +37,7 @@ using ES6 and jspm.
 3. Install Gulp and jspm globally: `npm install -g gulp jspm`.
 4. `npm install` then `jspm install` to instal development and browser packages.
 5. Run `gulp` to start the local dev server.
-6. Write an awesome app! 😀
+6. Make your own enhancements! 😀
 
 
 ## Building and Publishing
