@@ -5,9 +5,10 @@ export class SearchController {
   constructor($log, $state, session) {
     'ngInject';
 
+    this.$log = $log;
+    this.$state = $state;
     this.queryParams = session.queryParams;
     this.searchTypes = settings.MEDIA_TYPES;
-    Object.assign(this, {$log, $state});
   }
 
   search(queryParams) {
@@ -23,7 +24,9 @@ export class ResultsController {
 
     $log.debug('Search response: ', response);
 
-    Object.assign(this, {$log, $state, response});
+    this.$log = $log;
+    this.$state = $state;
+    this.response = response;
   }
 
   get showResults() {

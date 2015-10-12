@@ -5,6 +5,7 @@ export default class {
   constructor($log) {
     'ngInject';
 
-    Object.assign(this, {$log, settings});
+    this.$log = $log;
+    this.settings = settings;
   }
 }
