@@ -14,7 +14,7 @@ function route($stateProvider) {
   $stateProvider.state('_base', {
     abstract: true,
     controller,
-    controllerAs: '_base',
+    controllerAs: 'vm',
     template
   });
 }
