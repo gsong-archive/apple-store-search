@@ -1,6 +1,6 @@
-import {ResultsController, SearchController} from './controllers';
+import {ResultsController, SearchController} from './controller';
 import {makeTitle} from '../utils';
-import {search as response} from './helper';
+import {search as response} from './resolver';
 
 import baseTemplate from './_base.html!text';
 import resultsTemplate from './results.html!text';

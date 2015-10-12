@@ -5,7 +5,7 @@ export function search(
 
   Object.assign(session.queryParams, $stateParams);
 
-  $log.debug('route resolve', $stateParams);
+  $log.debug('Resolving state', $state);
 
   if (!$stateParams.term) {
     return;
@@ -16,4 +16,3 @@ export function search(
     return response.data;
   });
 }
-
