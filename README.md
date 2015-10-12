@@ -1,9 +1,9 @@
 # Universal Apple Store Search
 
 This is a fully functional app demonstrating latest best practices in Angular,
-using ES6 and jspm.
+using ES6 and jspm. The backend is Apple's [Search API][apple api].
 
-[Check out the app](http://gsong.github.io/apple-store-search).
+You can [see the app in action][app].
 
 ## Primary Technologies
 
@@ -66,6 +66,8 @@ gulp.
 [No rights reserved][unlicensed]. Made with 🐣 by [George Song][gs twitter].
 
 
+[app]: http://gsong.github.io/apple-store-search
+[apple api]: https://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web-service-search-api.html
 [autoprefixer]: https://github.com/postcss/autoprefixer
 [babel]: https://babeljs.io/
 [browsersync]: http://www.browsersync.io
@@ -81,5 +83,5 @@ gulp.
 [pull request]: https://github.com/gsong/apple-store-search/compare/
 [systemjs]: https://github.com/systemjs/systemjs
 [todo]: https://github.com/gsong/apple-store-search/blob/development/TODO.md
-[ui router]: http://angular-ui.github.io/ui-router/site/#/api/ui.router
+[UI Router]: http://angular-ui.github.io/ui-router/site/#/api/ui.router
 [unlicensed]: http://unlicense.org/
