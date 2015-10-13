@@ -3,7 +3,7 @@ import path from 'path';
 
 export const BUILD_DIR = '.build/';
 export const DIST_DIR = 'dist/';
-export const SRC_DIR = 'app/';
+export const SRC_DIR = 'src/';
 export const TMP_DIR = '.tmp/';
 
 export const BUILD_ALL = path.join(BUILD_DIR, '**/*');

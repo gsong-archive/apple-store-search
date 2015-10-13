@@ -6,7 +6,7 @@ import jspm from 'jspm';
 import runSequence from 'run-sequence';
 
 import * as paths from './paths';
-import environments from '../app/scripts/environments';
+import environments from '../src/scripts/environments';
 import gulp from './_gulp';
 
 import packageSpec from '../package.json';
