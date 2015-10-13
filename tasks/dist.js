@@ -9,7 +9,7 @@ const $ = gulpLoadPlugins();
 
 
 gulp.task('dist:post-jspm', () =>
-  gulp.src(paths.INDEX_DEST)
+  gulp.src(paths.BUILD_INDEX_JS)
   .pipe($.replace(/(angular.bootstrap.*strictDi:\s*)(false)/g, '$1true'))
   .pipe($.ngAnnotate())
   .pipe($.uglify())
@@ -23,7 +23,7 @@ gulp.task('dist:js', (callback) =>
 
 
 gulp.task('dist:html', () =>
-  gulp.src(paths.SRC_INDEX)
+  gulp.src(paths.SRC_INDEX_HTML)
   .pipe($.htmlReplace({'js': paths.INDEX_SCRIPT}))
   .pipe($.minifyHtml({empty: true}))
   .pipe(gulp.dest(paths.BUILD_DIR))

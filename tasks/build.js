@@ -32,7 +32,7 @@ export default settings;`);
 
 
 gulp.task('build:jspm', ['compile:styles'], () => jspm.bundleSFX(
-  paths.INDEX_SRC, paths.INDEX_DEST, {
+  paths.TMP_INDEX_JS, paths.BUILD_INDEX_JS, {
     minify: false,
     mangle: false,
     sourceMaps: true
@@ -46,7 +46,7 @@ gulp.task('build:js', (callback) =>
 
 
 gulp.task('build:html', () =>
-  gulp.src(paths.SRC_INDEX)
+  gulp.src(paths.SRC_INDEX_HTML)
   .pipe($.htmlReplace({'js': paths.INDEX_SCRIPT}))
   .pipe(gulp.dest(paths.BUILD_DIR))
 );
