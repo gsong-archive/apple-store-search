@@ -1,6 +1,6 @@
 .DS_STORE
 .build
 .tmp
-app/scripts/settings.js
 jspm_packages
 node_modules
+src/config/settings.js
