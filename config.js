@@ -14,7 +14,7 @@ System.config({
 
   map: {
     "angular": "github:angular/bower-angular@1.4.7",
-    "angular-material": "github:angular/bower-material@0.11.2",
+    "angular-material": "github:angular/bower-material@0.11.4",
     "angular-messages": "github:angular/bower-angular-messages@1.4.7",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
     "angular-ui-router-title": "npm:angular-ui-router-title@0.0.4",
@@ -33,7 +33,7 @@ System.config({
     "github:angular/bower-angular-aria@1.4.7": {
       "angular": "github:angular/bower-angular@1.4.7"
     },
-    "github:angular/bower-material@0.11.2": {
+    "github:angular/bower-material@0.11.4": {
       "angular": "github:angular/bower-angular@1.4.7",
       "angular-animate": "github:angular/bower-angular-animate@1.4.7",
       "angular-aria": "github:angular/bower-angular-aria@1.4.7",
