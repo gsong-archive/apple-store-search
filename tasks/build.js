@@ -31,7 +31,7 @@ export default settings;`);
 });
 
 
-gulp.task('build:jspm', ['compile:styles'], () => jspm.bundleSFX(
+gulp.task('build:jspm', ['compile:styles', 'js:lint'], () => jspm.bundleSFX(
   paths.TMP_INDEX_JS, paths.BUILD_INDEX_JS, {
     minify: false,
     mangle: false,
