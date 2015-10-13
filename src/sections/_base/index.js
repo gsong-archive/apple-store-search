@@ -5,7 +5,7 @@ import 'angular-ui-router';
 
 import controller from './controller';
 
-import template from './template.html!text';
+import template from './template.html!';
 
 
 function route($stateProvider) {
