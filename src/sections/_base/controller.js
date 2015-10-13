@@ -1,4 +1,4 @@
-import settings from '../../settings';
+import settings from '../../config/settings';
 
 
 export default class {

@@ -1,4 +1,4 @@
-import settings from '../../settings';
+import settings from '../../config/settings';
 import urls from './urls';
 
 

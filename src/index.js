@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-import app from './app.js';
+import app from './app/index.js';
 
 
 angular.element(document).ready(function() {

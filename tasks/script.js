@@ -16,7 +16,7 @@ gulp.task('js:lint', () =>
 
 
 gulp.task('js:replace_paths', ['js:lint'], () =>
-  gulp.src(paths.MAIN_DEST)
+  gulp.src(paths.INDEX_DEST)
   .pipe($.replace(paths.TMP_DIR, ''))
-  .pipe(gulp.dest(paths.BUILD_SCRIPTS_DIR))
+  .pipe(gulp.dest(paths.BUILD_DIR))
 );

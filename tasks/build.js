@@ -6,7 +6,7 @@ import jspm from 'jspm';
 import runSequence from 'run-sequence';
 
 import * as paths from './paths';
-import environments from '../src/scripts/environments';
+import environments from '../src/config/environments';
 import gulp from './_gulp';
 
 import packageSpec from '../package.json';
@@ -17,7 +17,7 @@ const $ = gulpLoadPlugins();
 
 gulp.task('build:make-settings', () => {
   let env = process.env.ENV || 'development';
-  let outfile = path.join(paths.SRC_DIR, 'scripts/settings.js');
+  let outfile = path.join(paths.SRC_DIR, paths.SETTINGS);
   let settings = environments[env];
   settings.VERSION = packageSpec.version;
   $.util.log(settings);
@@ -32,7 +32,7 @@ export default settings;`);
 
 
 gulp.task('build:jspm', ['compile:styles'], () => jspm.bundleSFX(
-  paths.MAIN_SRC, paths.MAIN_DEST, {
+  paths.INDEX_SRC, paths.INDEX_DEST, {
     minify: false,
     mangle: false,
     sourceMaps: true
@@ -47,7 +47,7 @@ gulp.task('build:js', (callback) =>
 
 gulp.task('build:html', () =>
   gulp.src(paths.SRC_INDEX)
-  .pipe($.htmlReplace({'js': 'scripts/main.js'}))
+  .pipe($.htmlReplace({'js': paths.INDEX_SCRIPT}))
   .pipe(gulp.dest(paths.BUILD_DIR))
 );
 

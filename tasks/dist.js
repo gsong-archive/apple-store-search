@@ -9,11 +9,11 @@ const $ = gulpLoadPlugins();
 
 
 gulp.task('dist:post-jspm', () =>
-  gulp.src(paths.MAIN_DEST)
+  gulp.src(paths.INDEX_DEST)
   .pipe($.replace(/(angular.bootstrap.*strictDi:\s*)(false)/g, '$1true'))
   .pipe($.ngAnnotate())
   .pipe($.uglify())
-  .pipe(gulp.dest(paths.BUILD_SCRIPTS_DIR))
+  .pipe(gulp.dest(paths.BUILD_DIR))
 );
 
 
@@ -24,7 +24,7 @@ gulp.task('dist:js', (callback) =>
 
 gulp.task('dist:html', () =>
   gulp.src(paths.SRC_INDEX)
-  .pipe($.htmlReplace({'js': 'scripts/main.js'}))
+  .pipe($.htmlReplace({'js': paths.INDEX_SCRIPT}))
   .pipe($.minifyHtml({empty: true}))
   .pipe(gulp.dest(paths.BUILD_DIR))
 );
