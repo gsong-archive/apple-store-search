@@ -8,8 +8,7 @@ import gulp from './_gulp';
 const $ = gulpLoadPlugins();
 
 
-gulp.task('dist:post-jspm', () =>
-  gulp.src(paths.BUILD_INDEX_JS)
+gulp.task('dist:post-jspm', () => gulp.src(paths.BUILD_INDEX_JS)
   .pipe($.replace(/(angular.bootstrap.*strictDi:\s*)(false)/g, '$1true'))
   .pipe($.ngAnnotate())
   .pipe($.uglify())
@@ -17,13 +16,12 @@ gulp.task('dist:post-jspm', () =>
 );
 
 
-gulp.task('dist:js', (callback) =>
-  runSequence('build:jspm', 'dist:post-jspm', 'js:replace_paths', callback)
-);
+gulp.task('dist:js', (callback) => runSequence(
+  'build:jspm', 'dist:post-jspm', 'js:replace_paths', callback
+));
 
 
-gulp.task('dist:html', () =>
-  gulp.src(paths.SRC_INDEX_HTML)
+gulp.task('dist:html', () => gulp.src(paths.SRC_INDEX_HTML)
   .pipe($.htmlReplace({'js': paths.INDEX_SCRIPT}))
   .pipe($.minifyHtml({empty: true}))
   .pipe(gulp.dest(paths.BUILD_DIR))
@@ -44,11 +42,9 @@ gulp.task('dist:copy', () => {
 });
 
 
-gulp.task('dist', (callback) =>
-  runSequence(
-    ['clean:build', 'clean:dist', 'build:make-settings', 'utils:copy_to_tmp'],
-    ['dist:js', 'dist:html', 'build:images'],
-    'dist:copy',
-    callback
-  )
-);
+gulp.task('dist', (callback) => runSequence(
+  ['clean:build', 'clean:dist', 'build:make-settings', 'utils:copy_to_tmp'],
+  ['dist:js', 'dist:html', 'build:images'],
+  'dist:copy',
+  callback
+));

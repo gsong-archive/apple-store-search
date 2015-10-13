@@ -40,20 +40,18 @@ gulp.task('build:jspm', ['compile:styles'], () => jspm.bundleSFX(
 ));
 
 
-gulp.task('build:js', (callback) =>
-  runSequence('build:jspm', 'js:replace_paths', callback)
-);
+gulp.task('build:js', (callback) => runSequence(
+  'build:jspm', 'js:replace_paths', callback
+));
 
 
-gulp.task('build:html', () =>
-  gulp.src(paths.SRC_INDEX_HTML)
+gulp.task('build:html', () => gulp.src(paths.SRC_INDEX_HTML)
   .pipe($.htmlReplace({'js': paths.INDEX_SCRIPT}))
   .pipe(gulp.dest(paths.BUILD_DIR))
 );
 
 
-gulp.task('build:images', () =>
-  gulp.src(paths.TMP_IMAGE)
+gulp.task('build:images', () => gulp.src(paths.TMP_IMAGE)
   .pipe($.imagemin({
     progressive: true,
     interlaced: true
@@ -62,10 +60,8 @@ gulp.task('build:images', () =>
 );
 
 
-gulp.task('build', (callback) =>
-  runSequence(
-    ['clean:build', 'build:make-settings', 'utils:copy_to_tmp'],
-    ['build:js', 'build:html', 'build:images'],
-    callback
-  )
-);
+gulp.task('build', (callback) => runSequence(
+  ['clean:build', 'build:make-settings', 'utils:copy_to_tmp'],
+  ['build:js', 'build:html', 'build:images'],
+  callback
+));
