@@ -3031,6 +3031,23 @@
         }
       }
     },
+    "gulp-shell": {
+      "version": "0.5.0",
+      "from": "gulp-shell@>=0.5.0 <0.6.0",
+      "resolved": "https://registry.npmjs.org/gulp-shell/-/gulp-shell-0.5.0.tgz",
+      "dependencies": {
+        "async": {
+          "version": "1.4.2",
+          "from": "async@>=1.4.2 <1.5.0",
+          "resolved": "https://registry.npmjs.org/async/-/async-1.4.2.tgz"
+        }
+      }
+    },
+    "gulp-tasks": {
+      "version": "0.1.0",
+      "from": "gsong/gulp-tasks#v0.1.0",
+      "resolved": "git://github.com/gsong/gulp-tasks.git#273907615285c1b354718514defc00a78981c980"
+    },
     "gulp-uglify": {
       "version": "1.4.2",
       "from": "gulp-uglify@1.4.2",
@@ -5058,11 +5075,6 @@
           "from": "mime"
         }
       }
-    },
-    "require-dir": {
-      "version": "0.3.0",
-      "from": "require-dir@>=0.3.0 <0.4.0",
-      "resolved": "https://registry.npmjs.org/require-dir/-/require-dir-0.3.0.tgz"
     },
     "requires-port": {
       "version": "0.0.1",

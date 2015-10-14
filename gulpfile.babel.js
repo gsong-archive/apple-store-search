@@ -1,14 +1,8 @@
 import gulp from 'gulp';
-import gulpUtil from 'gulp-util';
-import requireDir from 'require-dir';
+import {makeSettings} from 'gulp-tasks';
+
+import environments from './src/config/environments';
 
 
-// Load custom tasks from the `tasks` directory
-try {
-  requireDir('tasks');
-} catch (err) {
-  gulpUtil.log(err);
-}
-
-
+makeSettings(environments);
 gulp.task('default', ['serve:dev'], () => {});
