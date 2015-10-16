@@ -1,5 +1,5 @@
 ## 0.1.1 (2015-10-13)
-* Use external gulp task pacakge
+* Use external gulp task package
 
 ## 0.1.0 (2015-10-12)
 * Massive reorg and refactor based on community feedback
