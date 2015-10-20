@@ -44,6 +44,16 @@
     "babel-eslint": "~4.1.1",
     "gulp": "~3.9.0",
     "gulp-tasks": "github:gsong/gulp-tasks#v0.1.0",
-    "jspm": "~0.16.0"
+    "isparta": "^3.1.0",
+    "jasmine": "^2.3.2",
+    "jasmine-core": "^2.3.4",
+    "jspm": "~0.16.0",
+    "karma": "^0.13.11",
+    "karma-babel-preprocessor": "^5.2.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-jspm": "^2.0.1",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-sourcemap-loader": "^0.3.6",
+    "phantomjs": "^1.9.18"
   }
 }
