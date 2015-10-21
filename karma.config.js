@@ -1,4 +1,6 @@
 /* global module */
+//Run karma
+// karma start ./karma.config.js --log-level debug --single-run
 module.exports = function (config) {
     'use strict';
     config.set({
@@ -52,12 +54,11 @@ module.exports = function (config) {
             reporters: [
                 {
                     type: 'text-summary',
-                    subdir: normalizationBrowserName
+                    dir: './.code-coverage/'
                 },
                 {
                     type: 'html',
-                    dir: 'code-coverage/',
-                    subdir: normalizationBrowserName,
+                    dir: './.code-coverage/',
                     watermarks: {
                         statements: [85, 99.9],
                         functions: [85, 99.9],
@@ -67,7 +68,7 @@ module.exports = function (config) {
                 },
                 {
                     type: 'lcovonly',
-                    dir: 'coverage/'
+                    dir: './.code-coverage/'
                 }
             ]
         }
