@@ -46,7 +46,7 @@ module.exports = function (config) {
         coverageReporter: {
             instrumenters: {isparta: require('isparta')},
             instrumenter: {
-                './src/**/*.js': 'isparta'
+                'src/*.js': 'isparta'
             },
 
             reporters: [
@@ -56,7 +56,7 @@ module.exports = function (config) {
                 },
                 {
                     type: 'html',
-                    dir: 'coverage/',
+                    dir: 'code-coverage/',
                     subdir: normalizationBrowserName,
                     watermarks: {
                         statements: [85, 99.9],

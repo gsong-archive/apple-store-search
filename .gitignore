@@ -4,3 +4,4 @@ build
 jspm_packages
 node_modules
 src/config/settings.js
+code-coverage
