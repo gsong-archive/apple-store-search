@@ -45,6 +45,8 @@ You can [see the app in action][app].
 
 1. Run `gulp dist` to build the app for distribution in the `/dist` folder.
 2. Run `gulp publish` to publish the app on `gh-pages` branch.
+3. To run unit tests, issue the following comment: `karma start ./karma.config.js --single-run`
+    3.1 The coverage report is written to: `.code-coverage/phantomjs/index.html`
 
 
 ## Hint
