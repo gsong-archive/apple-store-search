@@ -3151,9 +3151,9 @@
       }
     },
     "gulp-tasks": {
-      "version": "0.2.0",
-      "from": "gsong/gulp-tasks#v0.2.0",
-      "resolved": "git://github.com/gsong/gulp-tasks.git#0318a62611d8902fe535c0d0f382a5535fd44407"
+      "version": "0.2.1",
+      "from": "gsong/gulp-tasks#v0.2.1",
+      "resolved": "git://github.com/gsong/gulp-tasks.git#876c4295aa0ad439d61870293d4407ce61325e5c"
     },
     "gulp-uglify": {
       "version": "1.4.2",

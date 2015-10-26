@@ -1,3 +1,6 @@
+## 0.1.3 (2015-10-26)
+* Take responsibility for our own version number
+
 ## 0.1.2 (2015-10-26)
 * Better package structure for JSPM
 

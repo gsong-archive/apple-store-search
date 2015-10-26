@@ -1,3 +1,6 @@
+import packageSpec from '../../package.json';
+
+
 const MEDIA_TYPES = [
   ['all', 'All'],
   ['movie', 'Movie'],
@@ -15,6 +18,7 @@ const MEDIA_TYPES = [
 const shared = {
   API_URL: 'https://itunes.apple.com',
   MEDIA_TYPES: MEDIA_TYPES.map(([k, v]) => ({key: k, label: v})),
+  VERSION: packageSpec.version,
   DEFAULT_QUERY_PARAMS: {
     media: 'all',
     term: ''
