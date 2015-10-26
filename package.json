@@ -17,6 +17,14 @@
     "url": "https://github.com/gsong/apple-store-search.git"
   },
   "bugs": "https://github.com/gsong/apple-store-search/issues/new",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "~5.8.22",
+    "babel-eslint": "~4.1.1",
+    "gulp": "~3.9.0",
+    "gulp-tasks": "github:gsong/gulp-tasks#v0.2.0",
+    "jspm": "~0.16.0"
+  },
   "jspm": {
     "directories": {
       "baseURL": "src"
@@ -40,13 +48,5 @@
     "buildConfig": {
       "transpileES6": true
     }
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "babel-core": "~5.8.22",
-    "babel-eslint": "~4.1.1",
-    "gulp": "~3.9.0",
-    "gulp-tasks": "github:gsong/gulp-tasks#v0.1.1",
-    "jspm": "~0.16.0"
   }
 }
