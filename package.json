@@ -18,6 +18,9 @@
   },
   "bugs": "https://github.com/gsong/apple-store-search/issues/new",
   "jspm": {
+    "directories": {
+      "baseURL": "src"
+    },
     "dependencies": {
       "angular": "github:angular/bower-angular@^1.4.7",
       "angular-material": "github:angular/bower-material@^0.11.2",
