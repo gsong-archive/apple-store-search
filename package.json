@@ -20,7 +20,8 @@
   "dependencies": {},
   "devDependencies": {
     "babel-core": "~5.8.22",
-    "babel-eslint": "~4.1.1",
+    "babel-eslint": "~4.1.3",
+    "eslint": "~1.7.3",
     "gulp": "~3.9.0",
     "gulp-tasks": "github:gsong/gulp-tasks#v0.2.1",
     "jspm": "~0.16.0"

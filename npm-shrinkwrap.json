@@ -1384,7 +1384,7 @@
     },
     "eslint": {
       "version": "1.7.3",
-      "from": "eslint@>=1.0.0 <2.0.0",
+      "from": "eslint@*",
       "resolved": "https://registry.npmjs.org/eslint/-/eslint-1.7.3.tgz",
       "dependencies": {
         "espree": {
