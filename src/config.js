@@ -18,7 +18,7 @@ System.config({
     "angular-messages": "github:angular/bower-angular-messages@1.4.7",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
     "angular-ui-router-title": "npm:angular-ui-router-title@0.0.4",
-    "babel": "npm:babel-core@5.8.29",
+    "babel": "npm:babel-core@5.8.32",
     "babel-runtime": "npm:babel-runtime@5.8.29",
     "clean-css": "npm:clean-css@3.4.6",
     "core-js": "npm:core-js@1.2.3",
