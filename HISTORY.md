@@ -1,3 +1,7 @@
+## 0.1.4 (2015-11-15)
+* Update to using Babel 6 for Gulp
+* Add a subheader to show this is the Babel version of the app
+
 ## 0.1.3 (2015-10-26)
 * Take responsibility for our own version number
 
