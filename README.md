@@ -1,13 +1,13 @@
-# Universal Apple Store Search
+# Universal Apple Store Search (Babel Edition)
 
 This is a fully functional app demonstrating latest best practices in Angular,
-using ES6 and jspm. The backend is [Apple's Search API][apple api].
+using Babel/ES2015 and jspm. The backend is [Apple's Search API][apple api].
 
 You can [see the app in action][app].
 
 ## Primary Technologies
 
-* Transpiles ES6+ automagically using [Babel][]
+* Transpiles ES2015+ automagically using [Babel][]
 * Package management using [jspm][]
 * Develop and build using [Gulp][] and friends
 
@@ -15,7 +15,7 @@ You can [see the app in action][app].
 ## Major Concepts Demonstrated
 
 * Uses [UI Router][] for state based and nested routing
-* Uses jpsm instead of Bower or npm to manage packages for the browser
+* Uses jspm instead of Bower or npm to manage packages for the browser
 * Uses [SystemJS][] to load modules
 * Sass compilation using [LibSass][] and [Autoprefixer][]
 * Local dev server with [LiveReload](http://livereload.com/) using
@@ -23,7 +23,7 @@ You can [see the app in action][app].
 * Define and maintain consistent coding styles between different editors using
     [EditorConfig][]
 * Linting with [ESLint][]
-* Gulp tasks are written using ES6, of course.
+* Gulp tasks are written using ES2015, of course.
 * Multiple `serve` modes to facilitate development speed or simulate production
     environment.
 * Per environment setting determined at build time.
