@@ -1,11 +1,11 @@
+import 'angular-ui-router';
 import angular from 'angular';
 import ngMaterial from 'angular-material';
-
-import 'angular-ui-router';
 
 import controller from './controller';
 
 import './styles.css!';
+import 'angular-material/angular-material.css!';
 import template from './template.html!';
 
 
