@@ -1,5 +1,6 @@
 ## 0.1.5 (2016-02-14)
 * Update to Angular Material 1.0
+* Angular 1.5!
 
 ## 0.1.4 (2015-11-15)
 * Update to using Babel 6 for Gulp
