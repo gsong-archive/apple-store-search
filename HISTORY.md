@@ -1,3 +1,6 @@
+## 0.1.5 (2016-02-14)
+* Update to Angular Material 1.0
+
 ## 0.1.4 (2015-11-15)
 * Update to using Babel 6 for Gulp
 * Add a subheader to show this is the Babel version of the app
