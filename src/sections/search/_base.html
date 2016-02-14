@@ -2,8 +2,8 @@
   <form name="searchForm" ng-submit="vm.search(vm.queryParams)"
     style="padding:15px;">
 
-    <div layout="column" layout-gt-md="row" layout-fill>
-      <md-input-container flex-gt-md="15">
+    <div layout="column" layout-gt-sm="row" layout-fill>
+      <md-input-container flex-gt-sm="15">
         <label>Search type</label>
         <md-select ng-model="vm.queryParams.media">
           <md-option ng-value="searchType.key"
@@ -13,7 +13,7 @@
         </md-select>
       </md-input-container>
 
-      <md-input-container flex>
+      <md-input-container flex-gt-sm="85">
         <label>Search term</label>
         <input name="term" ng-model="vm.queryParams.term" required>
         <div ng-messages="searchForm.term.$error"
